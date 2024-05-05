@@ -51,7 +51,7 @@ module "autoscaling" {
 
   image_id            = data.aws_ami.app_ami.id
   instance_type       = var.instance_type
-  port                = 80
+  # port                = 80
 
 }
 
