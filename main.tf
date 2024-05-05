@@ -78,7 +78,7 @@ module "blog_alb" {
   target_groups = [
     {
       name_prefix      = "blog-"
-      protocol         = "HTTP"
+      backend_protocol = "HTTP"
       backend_port     = 80
       target_type      = "instance"
     }
